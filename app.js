@@ -33,7 +33,7 @@ app.use(shopRoutes);
 app.use(errorController.get404);
 
 mongoose.connect(
-    'mongodb+srv://pouyaafraz:pouyaafraz@cluster0.5vbadun.mongodb.net/shop?retryWrites=true&w=majority'
+    'mongodb+srv://user:pass@cluster0.5vbadun.mongodb.net/shop?retryWrites=true&w=majority'
   )
   .then(() => {
     User.findOne().then(user => {
